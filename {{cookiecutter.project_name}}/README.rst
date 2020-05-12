@@ -25,11 +25,11 @@ Development
 
     pip install -e .[dev]
 
-4. Build project
+4. Deploy pipeline stack
 
 .. code-block:: bash
 
-    cdk deploy {{cookiecutter.subpackage_name}}
+    cdk deploy {{cookiecutter.project_name}}
 
 Useful AWS CDK commands
 ***********************

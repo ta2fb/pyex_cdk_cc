@@ -1,7 +1,7 @@
 {
-    "project_name": "gitrepo",
+    "project_name": "git-repo",
     "namespace_name": "namespace",
-    "subpackage_name": "subpackage",
+    "subpackage_name": "sub_package",
     "stack_name": "NameStack",
     "stack_file_name": "name_stack",
     "description": "This is a description of your package.",
