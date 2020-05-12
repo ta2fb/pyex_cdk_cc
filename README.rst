@@ -1,8 +1,10 @@
-*******
-pyex_cc
-*******
+***********
+pyex_cdk_cc
+***********
 
 This project is based on tools discussed in the book *Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More* by Julian Danjou
+
+This project is also based on the aws cdk template for python adapted to pyex_cc
 
 Cookiecutter initial instructions
 #################################
@@ -19,8 +21,8 @@ Instructions for using this cookiecutter
 
 .. code-block:: bash
 
-    conda create --name pyex_cc python=3.8
-    conda activate pyex_cc
+    conda create --name pyex_cdk_cc python=3.6
+    conda activate pyex_cdk_cc
 
 3. Install cookiecutter
 
@@ -28,14 +30,14 @@ Instructions for using this cookiecutter
 
     pip install cookiecutter
 
-4. Create new project with pyex_cc
+4. Create new project with pyex_cdk_cc
 
 .. code-block:: bash
 
     # for ssh credentials
-    cookiecutter git@github.com:ta2fb/pyex_cc.git
+    cookiecutter git@github.com:ta2fb/pyex_cdk_cc.git
     # for https credentials
-    cookiecutter https://github.com/ta2fb/pyex_cc
+    cookiecutter https://github.com/ta2fb/pyex_cdk_cc
 
 5. Create git repository on AWS CodeCommit
 
@@ -67,7 +69,7 @@ Instructions for using this cookiecutter
 
 .. note:: You may need to change the region in the above urls
 
-9. Deactivate pyex_cc conda environment
+9. Deactivate pyex_cdk_cc conda environment
 
 .. code-block:: bash
 

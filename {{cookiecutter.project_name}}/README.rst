@@ -4,7 +4,7 @@
 
 {{cookiecutter.description}}
 
-This repo was created from the cookie cutter https://github.com/ta2fb/pyex_cc
+This repo was created from the cookie cutter https://github.com/ta2fb/pyex_cdk_cc
 
 .. readme-marker
 
@@ -16,7 +16,7 @@ Development
 
 .. code-block:: bash
 
-    conda create --name {{cookiecutter.namespace_name}}.{{cookiecutter.subpackage_name}} python=3.8
+    conda create --name {{cookiecutter.namespace_name}}.{{cookiecutter.subpackage_name}} python=3.6
     conda activate {{cookiecutter.namespace_name}}.{{cookiecutter.subpackage_name}}
 
 3. Install the code and development dependencies in the current conda environment
@@ -29,7 +29,40 @@ Development
 
 .. code-block:: bash
 
-    tox
+    cdk deploy {{cookiecutter.subpackage_name}}
+
+Useful AWS CDK commands
+***********************
+
+List all stacks in the app
+
+.. code-block:: bash
+
+    cdk ls
+
+Emits the synthesized CloudFormation template
+
+.. code-block:: bash
+
+    cdk synth
+
+Deploy this stack to your default AWS account/region
+
+.. code-block:: bash
+
+    cdk deploy
+
+Compare deployed stack with current state
+
+.. code-block:: bash
+
+    cdk diff
+
+Open CDK documentation
+
+.. code-block:: bash
+
+    cdk docs
 
 Build commands
 **************

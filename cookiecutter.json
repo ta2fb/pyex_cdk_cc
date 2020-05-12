@@ -2,6 +2,8 @@
     "project_name": "gitrepo",
     "namespace_name": "namespace",
     "subpackage_name": "subpackage",
+    "stack_name": "NameStack",
+    "stack_file_name": "name_stack",
     "description": "This is a description of your package.",
     "author": "Firstname Lastname",
     "author_email": "name@email.com",
