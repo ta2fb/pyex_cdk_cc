@@ -137,7 +137,5 @@ ChangeLog
 .cdk.staging
 cdk.out
 cdk.context.json
-
-# ta2fb - for biocore.aws-cdk-lambda-asset
 .build
 *.zip
