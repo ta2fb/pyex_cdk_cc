@@ -21,7 +21,7 @@ Instructions for using this cookiecutter
 
 .. code-block:: bash
 
-    conda create --name pyex_cdk_cc python=3.6
+    conda create --name pyex_cdk_cc python=3.8
     conda activate pyex_cdk_cc
 
 3. Install cookiecutter
