@@ -2,6 +2,7 @@
     "project_name": "git-repo",
     "namespace_name": "namespace",
     "subpackage_name": "sub_package",
+    "python_version": "3.8",
     "stack_name": "NameStack",
     "stack_file_name": "name_stack",
     "description": "This is a description of your package.",
