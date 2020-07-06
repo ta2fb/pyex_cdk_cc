@@ -14,7 +14,7 @@ Development
 
     source create_activate_virtualenv.sh
 
-3. Install other dependencies in the virtualenv to have them included in the lambda package
+3. (Optional) Install other dependencies in the virtualenv to have them included in the lambda package (add them to requirements.txt in this directory)
 4. Deploy the hello world api
 
 .. code-block:: bash
@@ -22,17 +22,19 @@ Development
     cd hello-world
     zappa deploy
 
-5. Note the URL after the API deploys successfully - copy the ID (e.g., https://<api_id>.execute-api.us-east-1.amazonaws.com/dev)
-6. Edit test_api.py, changing the api_id variable with the ID found in step 5
+5. Note the URL after the API deploys successfully - copy the <api_id> (e.g., https://<api_id>.execute-api.us-east-1.amazonaws.com/dev)
+6. Edit test_api.py, changing the api_id variable with the api_id found in step 5
 7. Make sure you have AWS credentials that have IAM access to the API gateway; change aws_profile in test_api.py if necessary
 8. Install the dependencies for the test_api.py script and run it
 
-.. note::
+.. warning::
 
     Do not install the dependencies for the test_api.py in the zappa virtualenv because that will add unnecessary dependencies to the lambda deploy - use the conda environment of this project or another python environment of your choosing
 
 .. code-block:: bash
 
+    deactivate
+    conda activate {{cookiecutter.namespace_name}}.{{cookiecutter.subpackage_name}}
     pip install aws_requests_auth boto3 requests
     python test_api.py
 

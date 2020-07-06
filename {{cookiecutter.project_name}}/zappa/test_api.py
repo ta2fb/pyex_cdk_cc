@@ -8,8 +8,8 @@ api_stage = 'dev'
 aws_profile = 'default'
 aws_region = 'us-east-1'
 
-base_url = f'https://{domain}/{api_stage}'
 domain = f'{api_id}.execute-api.{aws_region}.amazonaws.com'
+base_url = f'https://{domain}/{api_stage}'
 
 
 session = boto3.session.Session(profile_name=aws_profile)
