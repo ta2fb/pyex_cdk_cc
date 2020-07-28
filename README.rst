@@ -14,7 +14,7 @@ Cookiecutter initial instructions
 Assumptions
 
 * Git repository is hosted on AWS CodeCommit
-* PyPI repository is backed by s3 and uses s3pypi and/or CodeArtifact
+* PyPI repository is hosted on AWS CodeArtifact
 
 Instructions for using this cookiecutter
 
@@ -82,6 +82,9 @@ Instructions for using this cookiecutter
 
 Cookiecutter packages and purposes
 ##################################
+
+* codeartifact-release (https://github.com/ta2fb/codeartifact_release)
+  * Cuts releases and pushes artifacts to AWS CodeArtifact
 
 * pbr
 
