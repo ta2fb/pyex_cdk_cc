@@ -22,3 +22,4 @@ class {{cookiecutter.stack_name}}(core.Stack):
         super().__init__(scope, id, **kwargs)
 
         # The code that defines your stack goes here
+
