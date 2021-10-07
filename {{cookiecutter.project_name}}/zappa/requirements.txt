@@ -1,4 +1,0 @@
-Flask~=1.1.2
-zappa~=0.51.0
-# restriction for zappa
-Werkzeug<1.0
