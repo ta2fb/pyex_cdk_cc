@@ -11,7 +11,7 @@ class {{cookiecutter.stack_name}}(core.Stack):
     https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
     """
 
-    def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
+    def __init__(self, scope: core.Construct, id: str, stage_conf, **kwargs) -> None:
         """
 
         Args:
@@ -20,6 +20,8 @@ class {{cookiecutter.stack_name}}(core.Stack):
             **kwargs: Extra keyword argument list
         """
         super().__init__(scope, id, **kwargs)
+
+        self.conf = stage_conf
 
         # The code that defines your stack goes here
 
