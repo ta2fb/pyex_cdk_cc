@@ -6,6 +6,8 @@ This project is based on tools discussed in the book *Serious Python: Black-Belt
 
 This project is also based on the aws cdk template for python adapted to pyex_cc
 
+This project has been updated for cdk 2.x. See branch cdk1.x for cdk 1.x.
+
 Cookiecutter initial instructions
 #################################
 

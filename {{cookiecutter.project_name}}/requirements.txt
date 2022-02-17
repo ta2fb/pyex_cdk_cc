@@ -1,1 +1,1 @@
-aws-cdk.core
+aws-cdk-lib
