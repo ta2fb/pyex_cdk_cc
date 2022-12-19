@@ -1,4 +1,5 @@
 {
+    "github_org": "organization",
     "project_name": "git-repo",
     "namespace_name": "namespace",
     "subpackage_name": "sub_package",
