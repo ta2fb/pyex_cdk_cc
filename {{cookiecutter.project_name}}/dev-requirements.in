@@ -1,0 +1,9 @@
+-c requirements.txt
+-e file:.
+codeartifact-release
+docutils
+Pygments
+pytest
+pytest-xdist
+tox
+twine
