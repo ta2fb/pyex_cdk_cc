@@ -32,7 +32,6 @@ Development
 
 .. code-block:: bash
 
-    cd {{cookiecutter.project_name}}-cdk
     cdk deploy {{cookiecutter.project_name}}
 
 Useful AWS CDK commands
