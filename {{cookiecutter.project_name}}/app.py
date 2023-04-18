@@ -11,7 +11,7 @@ app = cdk.App()
 deployment_stage = os.environ.get('DEPLOYMENT_STAGE', 'dev')
 stage_conf = app.node.try_get_context(deployment_stage)
 
-env = cdk.Environment(account=stage_conf['account-id'], region=stage_conf['region'])
+env = cdk.Environment(account=stage_conf['account_id'], region=stage_conf['region'])
 
 {{cookiecutter.stack_name}}(app, "{{cookiecutter.project_name}}", stage_conf=stage_conf, env=env)
 

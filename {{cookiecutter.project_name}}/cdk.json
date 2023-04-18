@@ -2,7 +2,7 @@
   "app": "python3 app.py",
   "context": {
     "dev": {
-      "account-id": "CHANGE",
+      "account_id": "CHANGE",
       "region": "us-east-1",
       "stage": "dev"
     }
